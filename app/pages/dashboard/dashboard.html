@@ -7,10 +7,12 @@
     <div class="col"><canvas id="doughnut-chart3"></canvas><div class="can-label-up">Allocative efficiency</div><div class="can-label">Efficiency</div></div>
 </div>
 <hr>
+<h6>DASHBOARDS</h6>
+<h1 class="text-white">Quick Stats</h1>
 <div class="row mt-5">
-        <div class="col"><canvas id="polar-chart1"></canvas></div>
-        <div class="col"><canvas id="polar-chart2"></canvas></div>
-        <div class="col"><canvas id="polar-chart3"></canvas></div>
+        <div class="col"><canvas class="cus-round" id="polar-chart1"></canvas><div class="can-label-up">Product</div><div class="can-label">New vs Returned</div></div>
+        <div class="col"><canvas class="cus-round" id="polar-chart2"></canvas><div class="can-label-up">Product</div><div class="can-label">New vs Returned</div></div>
+        <div class="col"><canvas class="cus-round" id="polar-chart3"></canvas><div class="can-label-up">Product</div><div class="can-label">New vs Returned</div></div>
     </div>
 <script>
 'use strict';
@@ -79,8 +81,9 @@ new Chart(document.getElementById("polar-chart1"), {
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
-          data: [1267,734,784,433]
+          backgroundColor: ["#2C5B61", "#60A65F","#FFEC97","#247065"],
+          data: [1267,734,784,433],
+          borderColor: '#193441'
         }
       ]
     },
@@ -93,8 +96,9 @@ new Chart(document.getElementById("polar-chart2"), {
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
-          data: [167,734,784,433]
+          backgroundColor: ["#F2526E", "#F17A97","#F3BCC8","#E94858"],
+          data: [167,734,784,433],
+          borderColor: '#D94D3D'
         }
       ]
     },
@@ -107,8 +111,9 @@ new Chart(document.getElementById("polar-chart3"), {
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
-          data: [67,30,74,43]
+          backgroundColor: ["#FF9E0F", "#E87C0B","#FF9E58","#E8692B"],
+          data: [67,30,74,43],
+          borderColor: '#FFA700'
         }
       ]
     },
