@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AiB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="https://material.io/guidelines/static/spec/images/callouts/default.svg" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/customStyles.css">
+    <title>AiB | Employee Tracker</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <div id="logo" ui-sref="dashboard">
+                    <span style="color: rgb(236, 248, 255)">A</span><span style="color: rgb(238, 54, 54)">i</span><span style="color:rgb(236, 248, 255)">B</span> 
+                </div>
+                <div style="font-size: 16px; margin-bottom: 10px;">DASHBOARDS</div>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control bg-dark" placeholder="Search">
+                    </div>
+                </form>
+                <li class="sidebar-brand"><a ui-sref="dashboard">Overview</a></li>
+                <a ui-sref="test"><li>Employees</li></a>
+                <li><a ui-sref="main">Next link</a></li>
+                <li><a>Last link</a></li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="page-content">
+                <div class="container">
+                    <div class="row text-centered">
+                        <div class="col-md-12">
+                            <div style="height:40px;"></div>
+                            <main><div ui-view autoscroll="true" autoscroll-body-top></div></main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/ui-router.min.js"></script>
+    <script src="scripts/chartjs.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/pages/pages.module.js"></script>
+    <script src="app/pages/dashboard/dashboard.module.js"></script>
+    <script src="app/pages/dashboard/dashboardCtrl.js"></script>
+    <script src="app/pages/test/test.module.js"></script>
+    <script src="app/pages/test/testCtrl.js"></script>
+</body>
+</html>

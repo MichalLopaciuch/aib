@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(37,39,48);
+    color: rgb(67, 71, 88);
+}
+
+#wrapper {
+    padding-left: 350px;
+    transition: all 0.4s ease 0s;
+}
+  
+#sidebar-wrapper {
+    margin-left: -250px;
+    left: 250px;
+    width: 350px;
+    background: rgb(37,39,48);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+}
+  
+#page-content-wrapper {
+    width: 100%;
+}
+  
+.sidebar-nav {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 300px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-top: 1px solid rgb(82, 82, 82);
+}
+
+#logo {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+a{
+    cursor: pointer;
+    color: white;
+}
+a:hover{
+    cursor: pointer;
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+
+canvas{
+    background: rgb(37,39,48);
+    z-index: 100000;
+    width: auto;
+    margin: 0 auto;
+}
+
+.can-label{
+    color: rgb(233, 233, 233);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.can-label-up{
+    margin-top: 15px;
+    color: rgb(179, 179, 179);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+ul li{
+    padding: 5px;
+}

@@ -1,0 +1,118 @@
+<h6>DASHBOARDS</h6>
+<h1 class="text-white">Overview</h1>
+<hr>
+<div class="row">
+    <div class="col"><canvas id="doughnut-chart1"></canvas><div class="can-label-up">Product</div><div class="can-label">New vs Returned</div></div>
+    <div class="col"><canvas id="doughnut-chart2"></canvas><div class="can-label-up">Employeer</div><div class="can-label">Productivity</div></div>
+    <div class="col"><canvas id="doughnut-chart3"></canvas><div class="can-label-up">Allocative efficiency</div><div class="can-label">Efficiency</div></div>
+</div>
+<hr>
+<div class="row mt-5">
+        <div class="col"><canvas id="polar-chart1"></canvas></div>
+        <div class="col"><canvas id="polar-chart2"></canvas></div>
+        <div class="col"><canvas id="polar-chart3"></canvas></div>
+    </div>
+<script>
+'use strict';
+
+//DOUGHNUT CHARTS
+var optionsDou = {
+        legend: {
+            display: false
+        },
+        cutoutPercentage: 78,
+        responsive: false,
+        maintainAspectRatio: true
+    }
+new Chart(document.getElementById("doughnut-chart1"), {
+    type: 'doughnut',
+    data: {
+        labels: ["New", "Returned"],
+        datasets: [{
+            backgroundColor: ["#00a8e1","#00d291"],
+            data: [2478,433],
+            borderColor: '#000000'
+        }]
+    },
+    options: optionsDou
+});   
+
+
+new Chart(document.getElementById("doughnut-chart2"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Work", "Free time"],
+        datasets: [{
+            backgroundColor: ["#00a8e1","#00d291"],
+            data: [247,433],
+            borderColor: '#000000'
+        }]
+    },
+    options: optionsDou
+}); 
+
+new Chart(document.getElementById("doughnut-chart3"), {
+    type: 'doughnut',
+    data: {
+        labels: ["percentage", "percentage"],
+        datasets: [{
+            backgroundColor: ["#00a8e1","#00d291"],
+            data: [150,433],
+            borderColor: '#000000'
+        }]
+    },
+    options: optionsDou
+}); 
+
+//END DOUGHNUT CHARTS
+
+//POLAR CHARTS
+var optionsPolar = {
+    legend:{
+        display:false
+    }
+}
+new Chart(document.getElementById("polar-chart1"), {
+    type: 'polarArea',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+          data: [1267,734,784,433]
+        }
+      ]
+    },
+    options: optionsPolar
+});
+new Chart(document.getElementById("polar-chart2"), {
+    type: 'polarArea',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+          data: [167,734,784,433]
+        }
+      ]
+    },
+    options: optionsPolar
+});
+new Chart(document.getElementById("polar-chart3"), {
+    type: 'polarArea',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+          data: [67,30,74,43]
+        }
+      ]
+    },
+    options: optionsPolar
+});
+//END POLAR CHARTS
+</script>
