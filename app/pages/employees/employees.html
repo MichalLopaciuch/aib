@@ -4,15 +4,18 @@
         <h1 class="text-white">Employees</h1>  
     </div>
     <div class="col">
-            <button type="button" class="btn btn-success btn-lg btn-block"><img class="cus-icon" src="assets/icons/plus-em.svg" alt="+"> Add new employeer</button>
+        <button type="button" ui-sref="addEmployee" class="btn btn-success btn-lg btn-block"><img class="cus-icon" align="left" src="assets/icons/plus-em.svg" alt="+"> Add new employee</button>
+        <button type="button" ui-sref="test" class="btn btn-danger btn-lg btn-block"><img class="cus-icon" align="left" src="assets/icons/minus.svg" alt="+"> Remove employee from the list</button>
     </div>
 </div>
 <hr>
 <div class="container">
     <div class="row">
         <div class="col">
-            <div style='background-image: url("assets/photos/emp1.jpg");' class="cus-img-wrap"></div>
-            <span class="cus-emp-desc">CHAIRMAN</span><span class="cus-emp-name">Mark Harrison</span>
+            <div>
+                <div style='background-image: url("assets/photos/emp1.jpg");' class="cus-img-wrap"></div>
+                <span class="cus-emp-desc">CHAIRMAN</span><span class="cus-emp-name">Mark Harrison</span>
+            </div>
         </div>
         <div class="col">
             <div style='background-image: url("assets/photos/emp2.jpg");' class="cus-img-wrap"></div>
@@ -53,6 +56,6 @@
     </div>
     <hr>
     <div style="margin-bottom: 20px;"></div>
-    <button type="button" class="btn btn-outline-primary btn-lg btn-block">LOAD MORE</button>
+    <button ui-sref="test" type="button" class="btn btn-outline-primary btn-lg btn-block">LOAD MORE</button>
     <div style="margin-bottom: 20px;"></div>
 </div>

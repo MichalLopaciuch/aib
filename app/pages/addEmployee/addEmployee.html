@@ -1,0 +1,45 @@
+<img ui-sref="employees" class="cus-icon" src="assets/icons/back.svg" align="left" alt="<" style="cursor: pointer;"> <h6>EMPLOYEES</h6>
+<h1 class="text-white">Add new employee</h1>
+<hr>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputSurname">Surname</label>
+            <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Address 2 (optional)</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">City (State)</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="San Francisco California">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputForm">Form of employment</label>
+            <select id="inputForm" class="form-control">
+                <option selected>Choose...</option>
+                <option>B2B</option>
+                <option>Contract of employment</option>
+                <option>Agreement on order</option>
+                <option>Other...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputWp">Workplace</label>
+            <input type="text" class="form-control" id="inputWp" placeholder="UI Designer">
+        </div>
+    </div>
+    <button ui-sref="test" type="submit" class="btn btn-outline-success btn-lg btn-block">ADD</button>
+    <br><hr>
+</form>

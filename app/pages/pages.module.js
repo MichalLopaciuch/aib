@@ -3,7 +3,8 @@ angular.module('AiB.pages',[
     'ui.router',
     'AiB.pages.dashboard',
     'AiB.pages.test',
-    'AiB.pages.employees'
+    'AiB.pages.employees',
+    'AiB.pages.addEmployee'
 ])
     .config(routeConfig);
     
