@@ -74,8 +74,9 @@ canvas{
 }
 
 ul li{
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 0;
+    margin: 0; 
+    margin-bottom: 15px;
 }
 
 .cus-icon{
@@ -83,7 +84,6 @@ ul li{
     height: 25px;
     vertical-align: middle;
     margin-right: 15px;
-    /*background-color: white;*/
     border-radius: 5px;
 }
 
@@ -115,13 +115,4 @@ ul li{
     font-size: 14px;
     background-color: #008f3b;
     float: right;
-}
-
-.cus-plus{
-    padding: 5px;
-    width: 30px;
-    font-size: 25px;
-    margin-right: 20px;
-    background-color: red;
-    border-radius: 10px;
 }

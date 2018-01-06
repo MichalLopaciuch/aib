@@ -1,0 +1,20 @@
+.cus-img-wrap{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+.cus-emp-name{
+    margin-left: 20px;
+    color: rgb(179, 179, 179);
+    text-align: center;
+}
+.cus-emp-desc{
+    font-size: 12px;
+    text-align: center;
+}
+.cus-img-wrap:hover{
+    border: 2px solid #007bff;
+}
