@@ -1,0 +1,27 @@
+.cus-finding button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cus-finding img{
+    width: 100px;
+    height: 100px;
+}
+.cus-fin-wrap{
+    color: white;
+    font-size: 14px;
+}
+.cus-finding img:hover{
+    width: 120px;
+    cursor: pointer;
+}
+
+.cus-fin-desc{
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.cus-fin-sub{
+    font-size: 12px;
+    color: rgb(177, 177, 177);
+}
