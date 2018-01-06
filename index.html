@@ -23,10 +23,12 @@
                         <input type="text" class="form-control bg-dark" placeholder="Search">
                     </div>
                 </form>
-                <li class="sidebar-brand"><a ui-sref="dashboard"><button id="overv" type="button" class="btn btn-primary">Overview</button></a></li>
-                <a ui-sref="test"><li><img src="assets/icons/linkedin-logo.svg" align="left" alt="in"> Find employees</li></a>
+                <a ui-sref="dashboard"><li class="sidebar-brand"><button id="overv" type="button" class="btn btn-primary">Overview</button></li></a>
+                <a ui-sref="test"><li><img class="cus-icon" src="assets/icons/linkedin-logo.svg" align="left" alt="in"> Find employees</li></a>
                 <a ui-sref="test"><li><button type="button" class="btn btn-primary">Mail <span class="badge">7</span></button></li></a>
-                <a ui-sref="test"><li>Next Link</li></a>
+                <a ui-sref="test"><li>Motions <span class="cus-badg">New</span></li></a>
+                <hr>
+                <a ui-sref="employees"><li><img class="cus-icon" src="assets/icons/employees.svg" align="left" alt="in">Employees</li></a>
             </ul>
         </div>
         <div id="page-content-wrapper">
@@ -54,5 +56,7 @@
     <script src="app/pages/dashboard/dashboardCtrl.js"></script>
     <script src="app/pages/test/test.module.js"></script>
     <script src="app/pages/test/testCtrl.js"></script>
+    <script src="app/pages/employees/employees.module.js"></script>
+    <script src="app/pages/employees/employeesCtrl.js"></script>
 </body>
 </html>

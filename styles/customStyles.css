@@ -75,13 +75,16 @@ canvas{
 
 ul li{
     padding: 5px;
+    margin-bottom: 5px;
 }
 
-ul img {
-    width: 20px;
-    height: 20px;
+.cus-icon{
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
     margin-right: 15px;
+    /*background-color: white;*/
+    border-radius: 5px;
 }
 
 .cus-round{
@@ -104,4 +107,21 @@ ul img {
 #overv{
     text-align: left;
     width: 80%;
+}
+
+.cus-badg{
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #008f3b;
+    float: right;
+}
+
+.cus-plus{
+    padding: 5px;
+    width: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+    background-color: red;
+    border-radius: 10px;
 }
