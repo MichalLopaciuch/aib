@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="https://material.io/guidelines/static/spec/images/callouts/default.svg" />
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/customStyles.css">
-    <title>AiB | Employee Tracker</title>
+    <title>AiB | Overview</title>
 </head>
 <body>
     <div id="wrapper">
@@ -16,16 +16,17 @@
                 <div id="logo" ui-sref="dashboard">
                     <span style="color: rgb(236, 248, 255)">A</span><span style="color: rgb(238, 54, 54)">i</span><span style="color:rgb(236, 248, 255)">B</span> 
                 </div>
+                <hr>
                 <div style="font-size: 16px; margin-bottom: 10px;">DASHBOARDS</div>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
                         <input type="text" class="form-control bg-dark" placeholder="Search">
                     </div>
                 </form>
-                <li class="sidebar-brand"><a ui-sref="dashboard">Overview</a></li>
-                <a ui-sref="test"><li>Employees</li></a>
-                <a ui-sref="test"><li>Next link</li></a>
-                <a><li>Last link</li></a>
+                <li class="sidebar-brand"><a ui-sref="dashboard"><button id="overv" type="button" class="btn btn-primary">Overview</button></a></li>
+                <a ui-sref="test"><li><img src="assets/icons/linkedin-logo.svg" align="left" alt="in"> Find employees</li></a>
+                <a ui-sref="test"><li><button type="button" class="btn btn-primary">Mail <span class="badge">7</span></button></li></a>
+                <a ui-sref="test"><li>Next Link</li></a>
             </ul>
         </div>
         <div id="page-content-wrapper">

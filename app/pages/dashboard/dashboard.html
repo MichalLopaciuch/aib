@@ -16,35 +16,100 @@
 <hr>
 <h1 class="text-white">Informations</h1>
 <div class="row">
-<table class="table table-hover table-dark">
-<thead>
-<tr>
-<th scope="col">#</th>
-<th scope="col">First</th>
-<th scope="col">Last</th>
-<th scope="col">Handle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1</th>
-<td>Mark</td>
-<td>Otto</td>
-<td>@mdo</td>
-</tr>
-<tr>
-<th scope="row">2</th>
-<td>Jacob</td>
-<td>Thornton</td>
-<td>@fat</td>
-</tr>
-<tr>
-<th scope="row">3</th>
-<td colspan="2">Larry the Bird</td>
-<td>@twitter</td>
-</tr>
-</tbody>
-</table>
+    <div class="col">
+            <table class="table table-hover table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>            
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    <div class="col">
+            <table class="table table-hover table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>            
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div> 
 </div>
 <script>
 'use strict';
@@ -75,10 +140,10 @@ new Chart(document.getElementById("doughnut-chart1"), {
 new Chart(document.getElementById("doughnut-chart2"), {
     type: 'doughnut',
     data: {
-        labels: ["Work", "Free time"],
+        labels: ["Free time", "Work"],
         datasets: [{
             backgroundColor: ["#00a8e1","#00d291"],
-            data: [247,433],
+            data: [247,633],
             borderColor: '#000000'
         }]
     },
@@ -88,10 +153,10 @@ new Chart(document.getElementById("doughnut-chart2"), {
 new Chart(document.getElementById("doughnut-chart3"), {
     type: 'doughnut',
     data: {
-        labels: ["percentage", "percentage"],
+        labels: ["Percentage", "Percentage"],
         datasets: [{
             backgroundColor: ["#00a8e1","#00d291"],
-            data: [150,433],
+            data: [34,66],
             borderColor: '#000000'
         }]
     },

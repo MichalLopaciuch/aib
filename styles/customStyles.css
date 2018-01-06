@@ -27,7 +27,7 @@ body {
 .sidebar-nav {
     position: absolute;
     top: 50px;
-    left: 10px;
+    left: 20px;
     width: 300px;
     list-style: none;
     margin: 0;
@@ -40,7 +40,7 @@ hr{
 
 #logo {
     font-size: 4rem;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 a{
@@ -77,6 +77,13 @@ ul li{
     padding: 5px;
 }
 
+ul img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
 .cus-round{
     border: 1px solid rgb(37,39,48);
     border-radius: 7%;
@@ -92,4 +99,9 @@ ul li{
 }
 #polar-chart3{
     background-color: rgba(226, 222, 29, 0.9);
+}
+
+#overv{
+    text-align: left;
+    width: 80%;
 }
