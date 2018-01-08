@@ -5,7 +5,8 @@ angular.module('AiB.pages',[
     'AiB.pages.test',
     'AiB.pages.employees',
     'AiB.pages.addEmployee',
-    'AiB.pages.findings'
+    'AiB.pages.findings',
+    'AiB.pages.mail'
 ])
     .config(routeConfig);
     
