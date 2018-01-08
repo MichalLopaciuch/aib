@@ -59,6 +59,8 @@ canvas{
     background: rgb(37,39,48);
     z-index: 100000;
     width: auto;
+    max-width: 333px;
+    max-height: 166px;
     margin: 0 auto;
 }
 
