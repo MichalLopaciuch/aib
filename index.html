@@ -32,6 +32,8 @@
                 <a ui-sref="findings"><li><img class="cus-icon" src="assets/icons/finding.svg" align="left" alt="findings">Findings <span class="cus-badg">New</span></li></a>
                 <hr>
                 <a ui-sref="employees"><li><img class="cus-icon" src="assets/icons/employees.svg" align="left" alt="in">Employees</li></a>
+                <hr>
+                <a id="logout" ui-sref="dashboard"><li>Exit from the system</li></a>
             </ul>
         </div>
         <div id="page-content-wrapper">
@@ -53,6 +55,12 @@
     <script src="scripts/angular-animate.min.js"></script>
     <script src="scripts/ui-router.min.js"></script>
     <script src="scripts/chartjs.min.js"></script>
+    <script>
+        $('#logout').on('click', function(){
+            sessionStorage.setItem('redir', 'true');
+            window.location.href = 'index.html';
+        });
+    </script>
     <script src="app/app.js"></script>
     <script src="app/pages/pages.module.js"></script>
     <script src="app/pages/dashboard/dashboard.module.js"></script>
